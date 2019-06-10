@@ -1,0 +1,139 @@
+header {
+	width: 100%;
+	background: transparent;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	.logo img {
+		margin: 20px 0 0;
+	}
+	nav {
+		margin: 15px 0 0;
+		position: relative;
+		@media (max-width: 991px) {
+			margin: 10px 0;
+		}
+		ul li {
+			display: inline-block;
+			margin-right: 2rem;
+			@media (max-width: 991px) {
+				margin-right: 0;
+			}
+			a {
+				color: #333;
+				font-weight: normal;
+				padding: 0;
+				font-weight: 300;
+				font-size: 1.25rem;
+			}
+			&:hover,
+			&:focus {
+				a {
+					color: #222;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	&.sticky {
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  background-color: rgba(255, 255, 255, 0.8);
+	  @media (min-width: 992px) {
+		  min-height: 74px;
+	  }
+	  .logo img {
+			margin: 10px 0 0;
+		}
+	}
+	.btn-green {
+		color: #fff;
+		background: #00b900;
+		width: 170px;
+		height: 74px;
+		border-radius: 0 0 15px 15px;
+		position: absolute;
+		top: -20px;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    font-size: 1.15rem;
+		font-weight: 300;
+		&:hover {
+			color: #fff;
+			background: #019a01;
+			transition: ease-in background 1s;
+		}
+	}
+	.hidden-xs {
+		@media(max-width: 991px) {
+			display: none;
+		}
+	}
+	.visible-xs {
+		display: none;
+		@media(max-width: 991px) {
+			display: block;
+		}
+	}
+	.navbar-toggler {
+		float: right;
+		padding: 0.25rem 0.55rem;
+		&:focus {
+			outline: none;
+		}
+		&[aria-expanded="true"] {
+			.bar1 {
+				transform: rotate(-40deg) translate(-6px, 6px)
+			}
+			.bar2 {
+				opacity: 0;
+			}
+			.bar3 {
+				transform: rotate(40deg) translate(-7px, -8px)
+			}
+		}
+	}
+	.navbar {
+		padding: 0;
+		width: 100%;
+	}
+	.navbar-dark .navbar-toggler {
+		background: #00b900;
+	}
+	.bg-dark {
+		background: none !important;
+	}
+	.navbar-collapse {
+		background-color: rgba(255, 255, 255, 0.9);
+		width: 100%;
+	}
+	.navbar-nav,
+	.navbar-collapse {
+		border-radius: 0 0 5px 5px;
+	}
+	.navbar-nav {
+		width: 100%;
+	}
+	a.nav-link {
+		color: #333 !important;
+		border-bottom: solid 1px #ccc;
+	    &.no-boder {
+		    border-bottom: none;
+		    background: #00b900;
+		    color: #fff!important;
+		    padding-left: 1rem;
+		    padding-right: 1rem;
+		    border-radius: 0 0 5px 5px;
+	    }
+	}
+	.bar1, .bar2, .bar3 {
+	  width: 35px;
+	  height: 3px;
+	  background-color: #fff;
+	  margin: 6px 0;
+	  transition: 0.4s;
+	}
+}

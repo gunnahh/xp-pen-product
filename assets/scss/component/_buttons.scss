@@ -1,0 +1,45 @@
+.btn-line,
+.btn-order {
+	width: 242px;
+	height: 60px;
+	color: #fff;
+    text-align: center;
+    line-height: 100%;
+	&:hover {
+		color: #fff;
+	}
+	@media(max-width: 1199px) {
+		width: 212px;
+	}
+	@media(max-width: 991px) {
+		width: 240px;
+	}
+	@media(max-width: 554px) {
+		margin-bottom: 1rem;
+	}
+}
+.btn-line {
+	background: #00b900;
+	margin-right: 25px;
+	padding: 10px 0 0;
+	@media(max-width: 1199px) {
+		margin-right: 10px;
+	}
+	@media(max-width: 991px) {
+		margin-right: 24px;
+	}
+	@media(max-width: 554px) {
+		margin-right: 0;
+	}
+	img {
+		margin-right: .2rem;
+	}
+}
+.btn-order {
+	background: #3c3c3c;
+	padding: 16px 0 0;
+    img {
+	    top: -.6rem;
+	    position: relative;
+    }
+}

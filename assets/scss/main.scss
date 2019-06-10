@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:300,400,500&display=swap');
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+@import 'component/header.scss';
+@import 'component/preview.scss';
+@import 'component/features.scss';
+@import 'component/footer.scss';
+@import 'component/buttons.scss';
+@import 'component/animate.scss';
+
+body {
+	font-family: 'Kanit', sans-serif;
+	background: #fff;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+
+.os-animation {
+    opacity: 0;
+}
+
+.os-animation.animated {
+    opacity: 1;
+}
